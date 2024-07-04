@@ -16,6 +16,10 @@ def generate_wordcloud(tweets):
     # Your word cloud generation logic here
     pass
 
+@app.route('/home')
+def hello_twitter():
+    return 'Hello Open'
+
 @app.route('/extract', methods=['POST'])
 def extract_tweets():
     data = request.json
