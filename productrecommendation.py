@@ -4,6 +4,7 @@ from langchain_openai.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
+import os
 #from flask_ngrok import run_with_ngrok
 
 app = Flask(__name__)
@@ -41,7 +42,7 @@ def recommend():
     # movie_reviews = data['movie_reviews']
     book_titles = data['selected_books']
 
-    OPENAI_API_KEY = data['key']
+    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
     model = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model="gpt-3.5-turbo")
 
     template = """Task: Generate a book recommendation based on the user's movie history details, Twitter profile description, and posted tweets.
