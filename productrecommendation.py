@@ -18,7 +18,7 @@ def generate_wordcloud(tweets):
 
 @app.route('/home')
 def hello_twitter():
-    return 'Hello Open'
+    return 'Hello OpenAI'
 
 @app.route('/extract', methods=['POST'])
 def extract_tweets():
