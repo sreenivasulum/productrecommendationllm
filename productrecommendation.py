@@ -41,7 +41,7 @@ def recommend():
     # movie_reviews = data['movie_reviews']
     book_titles = data['selected_books']
 
-    OPENAI_API_KEY = "sk-proj-Re7WpnPtgygJewBx6cNdT3BlbkFJdnVWCv1sGZhbmcmqOGJv"
+    OPENAI_API_KEY = "sk-proj-lx3gJyUf4CBET9kL6CyIT3BlbkFJtgKPJfzidV0Kzn66y8PV"
     model = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model="gpt-3.5-turbo")
 
     template = """Task: Generate a book recommendation based on the user's movie history details, Twitter profile description, and posted tweets.
