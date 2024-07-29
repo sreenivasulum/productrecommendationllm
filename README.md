@@ -1,10 +1,16 @@
-# Personalised LLM for Book Title recommendation
+# Personalized LLM for Book Title Recommendation
+**Input:**
 
-**Input:** Watched movies titles, tweets and books titles.
+    Watched Movie Titles
+    Tweets
+    Book Titles
 
-**Output:** Book Title along with explanation.
+**Output:**
+    Recommended Book Title
+    Explanation for the Recommendation
 
-**Functionality:** It uses openai model for book title recommendation among the choices of book titles using the watched movie titles and tweets from the twitter. It does not uses any RAG and it is only for single domain approach.
+**Functionality:**
 
+This application utilizes an OpenAI model to recommend book titles based on watched movie titles and tweets. It focuses on a single-domain approach and does not use Retrieval-Augmented Generation (R
 
-Run Command:
+Run Command: python3 productrecommendation.py
